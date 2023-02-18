@@ -1,0 +1,27 @@
+[KM4] 1 - Introduction Algorithm
+
+Algoritma adalah …
+Tahapan pembuatan suatu aplikasi
+Rumus trigonometri dalam matematika
+Langkah-langkah sistematis untuk mencapai suatu tujuan xx
+
+Algoritma dapat dituliskan dalam bentuk … 
+Diagram Venn
+Diagram Usecase
+Diagram Flowchart xx
+
+Penulisan pseudocode harus sesuai dengan bahasa pemrograman … 
+Javascript
+Semua salah xx
+Go
+
+Dalam diagram flowchart, kita dapat menggambarkan proses percabangan
+dengan simbol …
+Persegi panjang
+Belah ketupat xx
+Segitiga
+
+Dengan diagram flowchart, kita dapat menggambarkan …
+Rangkuman pengeluaran bulanan
+Data sensus penduduk
+Cara menerbangkan layang-layang xx

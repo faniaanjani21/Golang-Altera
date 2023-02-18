@@ -1,0 +1,87 @@
+Recursive, Number Theory, Sorting & Searching
+
+https://docs.google.com/forms/d/e/1FAIpQLScRanDM-N-I9KnZBy2WzSt1xhTFS9vW_LS2cSwUT4ZfPlzlGw/viewform?embedded=true
+
+dari fungsi cek bilangan prima, apa yang menyebabkan fungsi berikut jauh lebih efisien dibanding algoritma pengecekan bilangan prima umumnya..
+func checkPrime (number int) bool (
+  if number < 2
+    return false
+ sartNumber := int (math. .Sgrt(f10at64(number)))
+  for i ;= 2; i <= sgr.tumber; i++ {
+    if number %i == 0
+      return false
+   }
+ } 
+ return true
+}
+
+A.if number < 2
+B.math.Sqrt xx
+C.number % i
+D.i++
+
+Algoritma berikut merupakan algoritma pencarian jenis apa
+for i := 0; i < len(elements); i++ (
+  if elements[i] == x
+     return i
+ }
+}
+ return 1-
+
+A.Binary Search
+B.Linier search - O(n) xx
+C.Builtins Search
+D.Buble Search
+
+Yang benar mengenai fungsi recursive adalah, kecuali
+A.memerlukan break poin untuk perulangan
+B.harus memiliki return value
+C.Fungsi yang memanggil dirinya sendiri xx
+D.banyak masalah dapat diselesaikan dengan mudah dan code yang sedikit
+
+Algoritma berikut merupakan algoritma sorting jenis apa
+count := make(I)int, k + 1)
+ for i := 0; i < len(elements); ; i++
+  count[elements[i]]++
+} 
+counter := 0
+for i := 1 k + 1; i++
+  for j := count[i]; j++
+    elements[counter] ] = i
+    counter += 1
+ return elements
+}
+}
+A.Counting sort - O(n + k) xx
+B.Buble Sort
+C.Selection sort - O(n^2)
+D.Merge sort - O (log n)
+
+ketikan dipanggil factorial(4) makan return value yang diberikan adalah
+func factorial(n int) int {
+ if n == 1
+    return 1
+  } else {
+    return n * factorial(n - 1)
+}
+}
+
+A.24
+B.120 xx
+C.10
+D.15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

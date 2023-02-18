@@ -1,0 +1,111 @@
+[KM4] 4 - Golang-Time Complexity & Space Complexity
+
+https://docs.google.com/forms/d/e/1FAIpQLSe2KaetbvX3yXDVCuOL_tiSsbs0dtwcHd-7Y1o4HL6QXzhLew/viewform?embedded=true
+
+
+
+Jenis time complexity dibawah merupakan jenis
+package main
+
+func sum(n int) int {
+	result := 0
+	for i := 0; i <= n; i++ {
+		for j := 0; j <= n; j++ {
+			result += i + j
+		}
+	}
+	return result
+}
+
+A.O(1)
+B.O(n)
+C.O(n^2) xx
+D.O(2n
+
+
+
+Jenis time complexity dibawah merupakan jenis
+package main
+
+func sum(n int) int {
+	result := 0
+	for i := 0; i < n; i++ {
+		result += i
+	}
+}
+
+A.O (log n)
+B.O(1) xx
+C.O(n)
+D.O(n^2)
+
+
+
+Jenis time complexity dibawah merupakan jenis
+func sum(n int) int {
+         result := 0
+         for i := n; i > 1; ; i / = 2 {
+                 result += i
+         }
+         return result
+}
+
+A.O(n^2)
+B.O(log n) xx
+C.O(1)
+D.O(n)
+
+
+
+Jenis time complexity dibawah merupakan jenis
+func sum(n int) int {
+         result := 0
+         for i := 0; i V 10; i++ {
+                 result +=
+         }
+         return result
+}
+
+A.O(n)
+B.O log n
+C.O(1) xx
+D.O(10)
+
+
+
+Jenis space complexity dibawah merupakan jenis
+func sum(n []int) []int {
+         result := []int{}
+         for i := len(n); > 0; i-- {
+                 result = append(result, i+10)
+         }
+         return result
+}
+
+A.O(1)
+B.O(2n) xx
+C.O(n)
+D.O(log n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

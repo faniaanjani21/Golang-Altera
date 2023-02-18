@@ -1,0 +1,33 @@
+[KM4] 5 - Golang-Data Structure  (Array, Slice, Map), Function
+
+https://docs.google.com/forms/d/e/1FAIpQLSdzJ99fhwAe6VFLPQ3pC7TjT0_IqB_IE5bR5Xc1FXxOsRJfhw/viewform?embedded=true]
+
+Berikut yang benar mengenai mengani array, kecuali
+A.dimulai dari index 0
+B.Hanya bisa menyimpan 1 tipe data xx
+C.Dapat menyimpan banyak nilai
+D.Ukuran array dapat diubah
+
+Berikut yang benar mengenai mengani slice, kecuali
+A.Dapat menyimpan banyak nilai
+B.Hanya bisa menyimpan 1 tipe data xx
+C.Data didalam slice dapat dihapus
+D.Ukuran slice tetap
+
+Package dalam string yang digunakan untuk menentukan sebuah teks mengandung teks lain adalah
+A.split
+B.separate
+C.trim
+D.contains xx
+
+Cara menambah data pada slice dapat dilakukan dengan …
+A.data = data + elemen
+B.data[3] = elemen
+C.data.add(elemen)
+D.data = append(data, elemen) xx
+
+Cara penulisan yang benar untuk membuat map dengan tipe key string dan value int adalah
+A.var bulan = map[int]string{} xx
+B.bulan = map[string]int{}
+C.map[int]string bulan = map[int]string{}
+D.var bulan = map[string]int{}

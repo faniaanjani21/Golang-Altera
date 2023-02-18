@@ -1,0 +1,33 @@
+Concurrent Programing
+
+https://docs.google.com/forms/d/e/1FAIpQLSfMOocEQBp0HIT4sp2ofHeswKpWH57Fw6Ghl80oicY2jNU-bg/viewform?embedded=true
+
+Functions or methods that run concurrently (independent) with other functions or methods merupakan pengertian dari
+A.Goroutine xx
+B.Choice
+C.Independent
+D.Simultaneous
+
+Berikut ini yang tidak termasuk dalam bagian pencarian dari BIG SEARCH WEBSITE adalah
+A.Websites
+B.Videos
+C.Images
+D.Menu xx
+
+Berikut ini yang tidak termasuk dalam Feature Go adalah
+A.Goroutines
+B.Private xx
+C.Channels
+D.Select
+
+In concurrent programs, multiple tasks can be executed ................. and may appear simultaneous
+A.independently
+B.simultaneously xx
+C.multiple times
+D.one time
+
+In parallel programs, multiple tasks can be executed .................
+A.twice
+B.simultaneously xx
+C.once
+D.no silmutanesously

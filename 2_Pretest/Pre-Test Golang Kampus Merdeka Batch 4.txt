@@ -1,0 +1,593 @@
+1. Pada flowchart berikut, tunjukkan bagian flowchart yang merupakan bagian terminator
+Input angka
+Hitung sisa bagi
+"mulai" dan "selesai" xx
+angka genap"
+
+2. Berikut adalah tipe data yang didukung oleh Golang, kecuali...
+A.slice
+B.object xx
+C.struct
+D.string
+
+3. Bagaimana cara mengubah tipe data integer menjadi tipe data float64 ?
+A.Dengan parseFloat(bilangan_integer)
+B.Dengan float64.parse(bilangan_integer)
+C.Dengan float.Parse(bilangan_integer)
+D.Dengan float64(bilangan_integer) xx
+
+4. Berapa time complexity dari kode berikut ? 
+for i := 0; i< len(nums); i++ { sum += nums[i]}
+A.O(n) xx
+B.O(n log n)
+C.O(n + m)
+D.O(1)
+
+5. Apa yang dilakukan oleh fungsi berikut ? 
+func secretfunc(n int) int {
+if n == 0 || n == 1 {
+return 1 
+} else {
+return n * secret func ( n - 1)
+}
+}
+A.Perhitungan GCD
+B.Perhitungan fi bonacci
+C.Perhitungan faktorial xx
+D.Perhitungan perkalian secara rekursif
+
+6. Perhatikan kode berikut. Nilai dari variabel capacity adalah... 
+var words []string = make([Jstring, 10) var capacity int = cap(words) fmt.Prtntln("the capacity:", capacity)
+A.11
+B.1
+C.0
+D.10 xx
+
+7. Perhatikan kode berikut. Apa output dari kode berikut ?
+func main() { var numbers []int32 = []int32{6, 5, 3, 1, 2, 4} for i := 1; i < len(numbers); i++ { fmt.Printf numbers[i]) } }
+A.3124
+B.653124
+C.53124 xx
+D.421356
+
+8. Perhatikan kode berikut. Apa output dari kode berikut ? 
+func main() {
+var numbers []int32 = []int32{6, 5,
+3, 1, 2, 4}
+var sum int32 = 0
+for num := range numbers {
+if num%2 == 0 {
+sum += num
+fmt.Println(sum)
+}
+A.21
+B.9
+C.0 xx
+D.12
+
+9. Perhatikan kode berikut. Apa output dari kode berikut ? 
+func main() {
+var car map[string]string =
+make(map[st ring]st ring)
+car["make"] = "Honda"
+car["model"] = "NSX"
+for val := range car {
+fmt.Prtntfval + "")
+}
+}
+A.make model
+B.Honda NSX
+C.Kode mengalami error karena terdapat kata kunci val
+D.make Honda model NSX xx
+
+10. Perhatikan kode berikut. Apa output dari kode berikut ?
+func main() {
+var person string = "random"
+var result []string =
+st rings.Split(person, "n")
+fmt.Printlnf strings.Join(result,""))}
+A.radom xx
+B.dom
+C.ra
+D.ran
+
+11. Apa yang dilakukan oleh fungsi berikut ?
+func secretFunc(sample string) bool {
+var splitted []byte =
+[]byte(sample)
+var index int = len(splitted) - 1
+for t := 0; i < len(splitted); t++
+if splttted[t] !=
+splitted[tndex] {
+return false
+tndex--
+}
+return true
+}
+A.Membandingkan dua karakter pada suatu kata
+B.Melakukan pengecekan kata
+C.Melakukan pengecekan anagram pada suatu kata
+D.Melakukan pengecekan palindrom pada suatu kata xx
+
+12. Bagaimana cara melakukan inheritance pada Golang ?
+A.Tidak bisa dilakukan xx
+B.Tidak bisa dilakukan, menggunakan komposisi struct
+C.Menggunakan struct abstrak
+D.Menggunakan mekanisme hierarki struct
+
+13. Perhatikan kode berikut. Apa output dari kode berikut ?
+func matn() {
+fmt.Println(secretFunc(4))
+}
+func secretFunc( n int) int {
+if n%2 == 0 {
+return n * secretFunc(n-l)
+} else {
+return n
+}
+}
+A.12
+B.2
+C.Error karena kode rekursif tidak mencapai base case xx
+D.4
+
+14. Perhatikan kode berikut. Tunjukkan bagian kode yang merupakan base case.
+func secretFunc(n int) int {
+if n <= 1 {
+return 1
+} else {
+return secretFunc(n-1) +
+secretFunc(n-2)
+}
+}
+A.else
+B.if n <= 1 xx
+C.return secretFunc(n-1) + secretFunc(n-2)
+D.return 1
+
+15. Terdapat sekumpulan data sebagai berikut. Tentukan urutan data jika terjadi pertukaran
+pertama kali pada algoritme pengurutan bubble sort. 56423
+A.6 5 4 2 3
+B.5 4 2 6 3 xx
+C.5 4 6 2 3
+D.5 4 2 3 6
+
+16. Perhatikan kode berikut. Apa output dari kode berikut ?
+func main () {
+go func() {
+fmt.println("test)
+}()
+go func() {
+fmt.println("cool")
+}()
+}
+
+A.cool test
+B.kosong
+C.Error karena goroutine tidak disinkronisasi xx
+D.test cool
+
+17. Tentukan query berikut yang merupakan Data Manipulation Language (DML).
+A.SELECT * FROM users WHERE id = 1; xx
+B.UPDATE users SET name = "jon" WHERE id = 1;
+C.SELECT AVG(students.score) AS average FROM students;
+D.ALTER TABLE users ADD id_card VARCHAR(255);
+
+18. Jenis relasi apa yang cocok untuk data buku dengan data penulis ?
+A.One to one
+B.Many to many xx
+C.Many to one
+D.One to many
+
+19. Diagram apa yang dapat digunakan untuk menggambarkan interaksi sebuah aktor dengan
+sistem ?
+A.Data Flow Diagram
+B.Activity Diagram
+C.Sequence Diagram
+D.Use Case Diagram xx
+
+20. Command apa yang dapat digunakan untuk mengganti hak akses pada sebuah file ? Command Line Interface (CLI)
+A.chmod xx
+B.chgfi le
+C.modfi le
+D.chown
+
+21. Bagaimana cara menyimpan perubahan yang akan diterapkan pada saat tertentu ?  Version Control
+A.Menggunakan cherry picking
+B.Menggunakan stash xx
+C.Menggunakan branch terpisah untuk perubahan yang akan diterapkan
+D.Menggunakan stage file
+
+22. Bagaimana cara mengambil satu commit pada branch tertentu yang akan diterapkan pada
+branch yang lain ?
+A.Tidak bisa dilakukan karena setiap branch memiliki commit tersendiri
+B.Bisa dilakukan dengan menggunakan pull
+C.Bisa dilakukan dengan menggunakan merge
+D.Bisa dilakukan dengan menggunakan cherry picking xx
+
+23. Jenis HTTP Method apakah yang cocok untuk mengirim request untuk melakukan perubahan
+pada suatu resource ?
+A.PUT xx
+B.UPDATE
+C.SET
+D.POST
+
+24. Perhatikan kode berikut. Apa yang terjadi jika sebuah GET request dikirimkan ke alamat /cool
+?
+func main() {
+e := echo.New()
+e.GET("/cool", func(c echo.Context)
+error {
+return c.Strtng(http.StatusOK,
+"test")
+})
+e.GET("/cool", func(c echo.Context)
+error {
+return c.Strtng(http.StatusOK,
+"sample")
+})
+e.GET("/cool", func(c echo.Context)
+error {
+return c.Strtng(http.StatusOK,
+"random")
+})
+e. Logger.Fatal(e.Sta「t(":1323"))
+}
+
+A.Menampilkan tulisan "random"
+B.Menampilkan tulisan "test"
+C.Terjadi error karena alamat "/cool" hanya boleh dipakai oleh satu GET request saja xx
+D.Menampilkan tulisan "sample"
+
+
+25. Perhatikan kode berikut. Apa yang terjadi jika sebuah POST request dikirimkan ke alamat
+/items ?
+type Item struct {
+Name string 'json:"name"'
+Price string 'json:"price"'
+}
+func main() {
+e := echo.New()
+e.P0ST("/items", func(c
+echo.Context) error {
+var newltem Item = new(Item)
+c.Bind(newltem)
+return
+c.JSON(http.StatusCreated, newltem)
+})
+e.Logger.Fatal(e.Start(":1323"))
+}
+
+A.Terjadi error karena newItem harus dibuat di dalam method Bind()
+B.Menampilkan item kosong
+C.Terjadi error karena tipe dari newItem harus sebuah pointer dari Item
+D.Menampilkan item yang baru dibuat xx
+
+26. Perhatikan kode berikut. Apa yang terjadi jika sebuah GET request dikirimkan ke alamat
+/items/4 ?
+func main() {
+e := echo.New()
+e.GET("/items/{id}", func(c
+echo.Context) error {
+id := c.Param("id")
+return c.String(http.StatusOK,
+"item id "+id)
+})
+e.Logger.Fatal(e.Start(":1323"))
+}
+A.Menampilkan pesan "Not Found"
+B.Terjadi error karena id tidak bisa dibaca
+C.Menampilkan tulisan "item id 4" xx
+D.Menampilkan tulisan "item id"
+
+27. Perhatikan kode berikut. Apa kesalahan dari kode berikut ?
+type DB struct {
+database []string
+}
+func (d *DB) GetAll() []string {
+return d.database
+func main() {
+e := echo.New()
+e.GET("/names", funcfc
+echo.Context) error {
+var Database DB = DB{
+database: []string{"john",
+"doe", "mark"},
+}
+var names []string =
+Database.GetAll()
+return c.JS0N(http.StatusOK,
+names)
+})
+e.Logger.Fatal(e.Start(":1323"))
+}
+
+A.Pengambilan data dari database harus dilakukan pada fungsi terpisah
+B.Pengambilan data dari database harus dilakukan oleh bagian controller terpisah
+C.Kode sudah benar
+D.Pengambilan data dari database harus dilakukan oleh bagian model xx
+
+28. Perhatikan kode berikut. Pada bagian manakah sebuah controller ?
+type Item struct {
+Name string
+Price int
+}
+func getltems(c echo.Context) error {
+return c.JSON(http.StatusOK,
+[]Item{
+Name: "test",
+Price: 10,
+},
+})
+}
+func main() {
+e := echo.New()
+e.GET("/items", getltems)
+e.Logger.Fatal(e.Start(":1323"))
+}
+
+A.Pada bagian echo.New()
+B.Pada struct Item
+C.Pada bagian e.GET()
+D.Pada bagian getItems xx
+
+29. Berikut adalah pernyataan yang benar mengenai MVC, kecuali... 
+A.Arsitektur MVC hanya bisa diterapkan dengan basis data xx
+B.Model berperan sebagai struktur data dari sebuah aplikasi
+C.Controller berperan sebagai business logic pada sebuah aplikasi
+D.Model berperan sebagai domain dari sebuah aplikasi
+
+30. Perhatikan kode berikut. Apa kesalahan dari kode berikut ?
+type Item struct {
+Name string
+Price int
+func getltems(c echo.Context) error {
+if c.Param("id") != "" {
+return c.String(http.StatusOK,
+"get item by id")
+} else {
+return c.String(http.StatusOK,
+"get all items")
+}
+}
+func matn() {
+e := echo.New()
+e.GET("/items", getltems)
+e.GET("/items/:id", getltems)
+e.Logger.Fatal( e.Start(":1323"))
+}
+A.Terdapat kesalahan karena getItems hanya boleh dipakai untuk mengambil seluruh data saja xx
+B.Terdapat kesalahan karena alamat /items/:id tidak bisa diakses
+C.Terdapat kesalahan karena alamat /items sudah dipakai pada request route sebelumnya
+D.Kode sudah benar
+
+31. Bagaimana cara menjalankan database migration dengan gORM ?
+A.Menggunakan Migrate()
+B.Menggunakan CreateMigration(nama_struct)
+C.Menggunakan AutoMigrate() dipanggil dari struct xx
+D.Menggunakan AutoMigrate(nama_struct)
+
+32. Perhatikan kode berikut. Apa kesalahan dari kode berikut ?
+
+type Product struct {
+gorm.Model
+Code string
+Price uint
+}
+func createProduct( ) {
+db, err :=
+gorm.Open(sqlite.Open("test.db"),
+&gorm.Config{})
+if err != nil {
+panic("failed to connect
+database")
+}
+db.AutoMigrate(&Product{})
+tx := db.Tx()
+defer func() {
+if r := recover(); r != nil {
+tx.Rollback()
+if err := tx.Error; err != nil {
+log.Fatal(err)
+}
+if err := tx.Create(&Product{Code:
+"A001", Price: 299}) Error; err != nil
+tx.Rollback()
+}
+if err := tx.Create(&Product{Code:
+"A002", Price: 299}).Error; err != nil
+tx.Rol1back()
+}
+tx.Commit()
+}
+
+A.Terdapat kesalahan karena transaksi hanya bisa di rollback jika semua operasi gagal
+B.Kode sudah benar
+C.Terdapat kesalahan karena transaksi database harus dimulai terlebih dahulu
+D.Terdapat kesalahan karena transaksi hanya bisa di commit jika rollback tidak dijalankan xx
+
+33. Perhatikan kode berikut. Apa kesalahan dari kode berikut ?
+func main() {
+e := echo.New()
+e.GETC/", middleware.CORS( ),func(c
+echo.Context) error {
+return c.Strtng(http.StatusOK,
+"welcome!")
+})
+e.Logger.Fatal(e.Start(":1323"))
+}
+
+A.Terdapat kesalahan karena konfi gurasi middleware seharusnya dilakukan sebelum request route didefi nisikan xx
+B.Terdapat kesalahan karena konfi gurasi untuk middleware CORS tidak dijelaskan
+C.Terdapat kesalahan karena konfi gurasi middleware seharusnya hanya bisa menggunakan method Use()
+D.Terdapat kesalahan karena konfi gurasi middleware seharusnya dilakukan setelah handler
+
+34. Mengapa unit testing perlu dijalankan ?
+A.Untuk memastikan sebuah unit aplikasi dapat berjalan dengan benar bersama dengan unit lainnya
+B.Untuk memastikan sebuah aplikasi dapat berjalan dengan benar
+C.Untuk memastikan sebuah unit aplikasi dapat berjalan dengan benar xx
+D.Untuk memastikan sebuah unit aplikasi dapat digunakan dengan modul aplikasi lainnya
+
+35. Perhatikan kode berikut. Apa kesalahan dari kode berikut ? 
+package main
+import "testing"
+func SecretFunc(a, b int32) int32 {
+return a * b
+}
+func TestSecretFunc(t *testing.T) {
+var expected int32 = 8
+var actual int32 = SecretFunc(4, 2)
+if expected != actual {
+t.Errorf("expected %v got %v",
+expected, actual)
+}
+}
+A.Terdapat kesalahan karena test harus dijalankan pada package test saja
+B.Terdapat kesalahan karena test hanya dijalankan sekali xx
+C.Terdapat kesalahan karena fungsi untuk testing tidak dijalankan di fungsi main()
+D.Terdapat kesalahan karena test hanya mencangkup test yang berhasil saja
+
+36. Perhatikan kode berikut. Apa output dari kode berikut ?
+package main
+import (
+"tmt"
+"testing"
+)
+func SecretFunc(a, b int32) int32 {
+return a * b
+}
+func TestSecretFunc(t *testing.T) {
+var expected tnt32 = 10
+var actual int32 = SecretFunc(4, 2)
+if expected != actual {
+t.Errorf("expected %v got %v",
+expected, actual)
+}
+t.Cleanup(func( ) {
+fmt.Prtntln("done!")
+})
+}
+A.Terjadi error karena kode tidak dijalankan di package test
+B.Terjadi error karena kode tidak dijalankan di fungsi main()
+C.Terjadi error karena test case gagal dan tulisan "done!" tidak ditampilkan
+D.Tulisan "done!" ditampilkan meskipun test case gagal xx
+
+37. Perhatikan kode berikut. Apa kesalahan dari kode berikut ? *
+func Save(input Product) (Product,
+[]Product)	{
+var repository ProductReposttory =
+ProductRepository{}
+var newProduct Product = Product{
+Name: input.Name,
+Price: input.Price,
+}
+repository.Save(newProduct)
+var products []Product =
+repository.GetAil{)
+return newProduct, products
+}
+A.Terdapat dua tugas yang memiliki ketergantungan yang kuat (high coupling) xx
+B.Terdapat dua tugas yang dijalankan tidak secara asinkron
+C.Terdapat dua tugas yang dijalankan pada satu fungsi
+D.Terdapat dua tugas yang dijalankan secara bersamaan
+
+38. Perhatikan kode berikut. Prinsip SOLID apakah yang dilanggar oleh kode berikut ?
+func Save(input Product) (Product,
+[]Product)	{
+var repository ProductReposttory =
+ProductRepository{}
+var newProduct Product = Product{
+Name: input.Name,
+Price: input.Price,
+}
+repository.Save(newProduct)
+var products []Product =
+repository.GetAil{)
+return newProduct, products
+}
+A.Open Close Principle
+B.Dependency Inversion Principle
+C.Single Responsibility Principle xx
+D.Interface Segregation Principle
+
+39. Berikut ini yang tidak termasuk dalam tujuan dalam mengimplementasikan Clean Architecture
+adalah
+A.High Coupling xx
+B.High Cohesion
+C.Low Coupling
+D.Testable
+
+40. Apa perintah yang dapat digunakan untuk melihat daftar container pada Docker yang sedang
+berjalan ?
+
+A.docker ps -a
+B.docker container ls --running
+C.docker ps xx
+D.docker container ls -a
+
+41. Apa perintah yang dapat digunakan untuk melihat seluruh daftar container pada Docker baik
+yang sedang berjalan maupun tidak ?
+A.docker container ls --all
+B.docker container ls
+C.docker ps
+D.docker container ls -a xx
+
+42. Berikut adalah pernyataan yang benar mengenai Docker, kecuali...
+A.Ketika sebuah container dijalankan namun image belum ada, maka Docker akan melakukan pull image secara otomatis
+B.Setiap container harus memiliki nama yang unik
+C.Ketika sebuah container dibuat dari suatu image yang belum ada maka terjadi error xx
+D.Container merupakan sebuah instance dari image
+
+43. Apa yang terjadi jika suatu container dijalankan namun container volume belum dibuat ?
+A.Terjadi error karena container volume harus dibuat terlebih dahulu xx
+B.Data di dalam container tetap ada meskipun container telah dimatikan sebelumnya
+C.Volume akan dibuat secara otomatis untuk suatu container
+D.Data di dalam container tetap ada selama container masih aktif
+
+44. Berikut yang merupakan perintah untuk build docker image yang benar adalah
+A.docker build alta:1.0.0
+B.docker build -t alta:1.0.0 xx
+C.docker build -t alta:1.0.0
+D.docker build --name alta:1.0.0
+
+45. Apa perintah yang dapat digunakan untuk melihat daftar image ?
+A.docker img ls
+B.docker ls image
+C.docker image ls xx
+D.docker image --all
+
+46. Berikut yang tidak termasuk dalam strategi deployment adalah.
+A.Forward Deployment xx
+B.One Box Deployment
+C.Blue Green Deployment
+D.Canary Deployment
+
+47. Sebuah deployment dilakukan secara bertahap dari unit yang terkecil. Jika berhasil maka unit
+lainnya akan dilakukan deployment. Strategi deployment apa yang dimaksud ?
+A.Canary Deployment xx
+B.Linear Deployment
+C.Blue Green Deployment
+D.Continous Deployment
+
+48. Sebuah deployment dilakukan pada dua infrastruktur yang berbeda. Satu infrastruktur
+digunakan untuk aplikasi yang terbaru sedangkan infrastruktur lainnya digunakan untuk aplikasi
+versi lama. Strategi deployment apa yang dimaksud ?
+A.Blue Green Deployment xx
+B.One Box Deployment
+C.Multi Environment Deployment
+D.Canary Deployment
+
+49. Berikut ini yang tidak termasuk dalam cycle Continuous Delivery & Continuous Deployment
+A.Deliver to Staging
+B.Application Acceptance Test
+C.Manual Test xx
+D.Platform Test
+
+50.  Berikut ini adalah tools dalam melakukan CI, kecuali
+A.Github Action
+B.Gitlab CI
+C.Github CI xx
+D.Jenkins
+
+
+

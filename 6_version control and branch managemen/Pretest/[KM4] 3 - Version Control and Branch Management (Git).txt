@@ -1,0 +1,31 @@
+[KM4] 3 - Version Control and Branch Management (Git)
+
+Mengatur versi source dari kode program merupakan pengertian dari
+Versioning xx
+Accepting
+Developing
+Maintain
+
+VCS merupakan singkatan dari
+Version Call System
+Version Complain System
+Version Control System xx
+Version Conditioning System
+
+Salah satu version control system populer yang digunakan para developer untuk mengembangkan software secara bersama-sama disebut
+VCS
+GIT xx
+TIG
+GIF
+
+Berikut ini yang tidak termasuk dalam tools adalah
+SCM
+VCS
+MCS xx
+RCM
+
+Berikut ini merupakan version control system, kecuali
+Centralized
+Option xx
+Single User
+Distributed

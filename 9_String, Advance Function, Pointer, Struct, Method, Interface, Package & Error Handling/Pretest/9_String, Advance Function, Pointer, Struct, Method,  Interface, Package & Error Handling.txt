@@ -1,0 +1,33 @@
+https://docs.google.com/forms/d/e/1FAIpQLSc2ePn5--sBzTUOD47PPw_8lvwzW1HrMvjc776MKgopuJR-Ew/viewform?embedded=true
+
+String, Advance Function, Pointer, Struct, Method,  Interface, Package & Error Handling
+
+Berikut yang benar mengenai pointer kecuali
+A.operator * digunakan untuk menandakan dalam membuat sebuah pointer xx
+B.operator * digunakan untuk mengakses nilai
+C.operator & digunakan untuk menandakan dalam membuat sebuah pointer
+D.operator & digunakan untuk mengambil sebuah alamat memori
+
+Ketika mempunyai fungsi tampil(key string){}, Bagaimana cara agar ketika memanggil fungsi tampil dapat mengirimkan berbagai tipe seperti int, bool, dll
+A.ubah parameter menjadi : key method
+B.ubah parameter menjadi : key struct
+C.ubah parameter menjadi : key interface
+D.ubah parameter menjadi : key interface{} xx
+
+Berikut yang benar dalam membuat struct dengan nama User adalah
+A.type struct User {}
+B.User {}
+C.struct User { } xx
+D.type User struct {}
+
+Berikut yang benar mengenai method didalam golang adalah, kecuali
+A.Method bisa diakses melalui lewat variabel objek (struct)
+B.Sebuah fungsi yang menempel pada sebuah type contoh nya struct
+C.method tidak bisa dipanggil melalui interface xx
+D.contoh pembuatan method sebagai berikut : func (s student) sayHello()
+
+Bagaimana cara menangkap sebuah panic didalam golang
+A.gunakan recover xx
+B.gunakan struct
+C.gunakan if else
+D.gunakan catch{}

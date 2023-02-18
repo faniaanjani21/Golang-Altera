@@ -1,0 +1,18 @@
+Version Control and Branch Management (Git)
+
+install git windows
+download git 
+https://desktop.github.com/ github dekstop
+https://git-scm.com/downloads git 
+ 
+
+command git
+git clone
+	untuk mengclone repository
+git add
+	Perubahan yang diajukan atau file tambahan akan ditambahkan ke index dengan menggunakan perintah add.
+git commit 
+	perubahan akan di kirimkan 
+git push
+	perubahan di kirimkan ke github
+

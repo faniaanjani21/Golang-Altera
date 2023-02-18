@@ -1,0 +1,31 @@
+[KM4] 2 - Golang-Basic Programming
+
+Keunggulan dari bahasa pemograman golang adalah sebagai berikut, kecuali 
+Mendukung Static Type xx
+Mendukung Dynamic Type
+Cepat dan Sintaks Ringkas
+Mendukung concurrent programming
+
+Percabangan pada Go dapat dilakukan dengan, kecuali …
+If
+Select-case xx
+If-Else
+Switch-case
+
+Berikut cara menuliskan perulangan paling  benar adalah
+for (i := 0; i < 5; i++) xx
+for (i = 0; i < 5; i++)
+for (int i := 5; i > 5; i--)
+for (int i; i < 5; i=2)
+
+Berikut yang benar mengenai variable adalah kecuali
+Memiliki alamat memory
+Memiliki nama
+Dapat menyimpan nilai lebih dari 1 xx
+Memiliki tipe data
+
+Operator yang digunakan untuk melakukan manipulasi bit adalah …
+Logic
+Arithmetic
+Comparison
+Bitwise xx

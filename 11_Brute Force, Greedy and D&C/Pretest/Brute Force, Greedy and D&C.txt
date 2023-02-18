@@ -1,0 +1,37 @@
+Brute Force, Greedy and D&C
+
+
+https://docs.google.com/forms/d/e/1FAIpQLSewefBqiKZu8nEmsL6cZlKXo_1jkfzRs-LbxhsyE6Ls8awinA/viewform?embedded=true
+
+
+
+
+Berikut mengenai brute force / complete search yang benar, kecuali
+A.Merupakan algoritma prioritas yang digunakan xx
+B.Melakukan pencarian data secara keseluruhan
+C.Tidak mempunyai batas waktu yang ditentukan
+D.Mudah dicoding
+
+berapa kali operasi atau perulangan maksimal yang akan dilakukan ketika dilakukan pencarian dengan binary search, dimanan nilai yang dicari 3 dari 16 data slice int
+A.16
+B.2 xx
+C.4
+D.3
+
+Ketika dilakukan operasi binary search  dengan mencari data nilai 6, maka iterasi selanjutnya yang benar adalah
+A.kiri digeser ke index 4 xx
+B.Langsung ditemukan pada index 4
+C.kiri digeser ke angka 3
+D.kanan digeser ke angka 3
+
+Berikut yang benar mengenai Greedy Algorithm adalah
+A.waktu yang dibutuhkan lama untuk eksekusi
+B.pasti dapat menyelesaikan masalah
+C.dikerjakan secara local paling optimal terlebih dahulu xx
+D.dikerjakan secara global paling optimal terlebih dahulu
+
+Ketika mempunyai coin value terdiri dari  {10, 25, 5, 3}, selanjutnya cari kombinasi yang terkecil jika dijumlahkan 29 menggunakan greedy
+A.25, 4 (tidak ditemukan)
+B.25, 3, 3, 3 (success) xx
+C.10, 5, 3, 1 (tidak ditemukan)
+D.10, 10, 3, 3, 3, 3 (success)
