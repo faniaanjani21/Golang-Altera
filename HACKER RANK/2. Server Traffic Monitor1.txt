@@ -1,0 +1,44 @@
+package main
+
+import (
+    "fmt"
+    "sort"
+)
+
+func main() {
+    var n int
+    fmt.Scan(&n)
+
+    start := make([]int, n)
+    for i := 0; i < n; i++ {
+        fmt.Scan(&start[i])
+    }
+
+    end := make([]int, n)
+    for i := 0; i < n; i++ {
+        fmt.Scan(&end[i])
+    }
+
+    sort.Ints(start)
+    sort.Ints(end)
+
+    count := 0
+    maxCount := 0
+    i, j := 0, 0
+
+    for i < n && j < n {
+        if start[i] < end[j] {
+            count++
+            i++
+        } else {
+            count--
+            j++
+        }
+
+        if count > maxCount {
+            maxCount = count
+        }
+    }
+
+    fmt.Println(maxCount)
+}

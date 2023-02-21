@@ -1,0 +1,176 @@
+1. Product Data Management
+Design a prototype data structure to efficiently manage the product data of an e-commerce website. Products are categorized by the product name, price, and manufacturing year, given as a 2-d array of size n x 3, products, where product[i] represents the three parameters of a product.
+
+ 
+
+There are q queries in a 2d array of size q x 2 of the format <type> <param> of the following three types:
+
+Type1: Find the names of the products manufactured in the given year.
+Type2: Find the names of the products below the price in their original order in products.
+Type3: Find the names of the products above the price in their original order in products.
+ 
+
+Given products and queries, for each query, report an array of names of corresponding products.
+
+ 
+
+Note: For consistency, all data is given as strings. Convert them to integers as necessary.
+
+ 
+
+Example
+
+Suppose n = 5, products = [ ["key", "50", "2013"], ["fan", "100", "2012"], ["lock", "150", "2013"], ["table", "200", "2011"], ["toy", "500", "2011"]], q = 4, and queries = [["Type1", "2013"], ["Type2", "500"], ["Type3", "500"], ["Type1", "2011"]].
+
+Query	Explanation	Answer
+Type1 2013	Products manufactured in 2013	["key", "lock"]
+Type2 500	Products with prices less than 500	["key", "fan", "table", "lock"]
+Type3 500 	Products with prices more than 500	[]
+Type1 2011	Products manufactured in 2011	["table", "toy"]
+ 
+
+Return [ ["key", "lock"], ["key", "fan", "table", "lock"], [], ["table", "toy"]].
+
+ 
+
+Function Description
+
+Complete the function getMatchingProducts in the editor below. 
+
+ 
+
+getMatchingProducts has the following parameter(s):
+
+    string products[n]:  the parameters of the products
+
+    string queries[q]:  the list of queries
+
+ 
+
+Returns
+
+    string[q][] : the list of valid products for each query
+
+ 
+
+Constraints
+
+1 ≤ n ≤ 600
+1 ≤ q ≤ 700
+The names of the products consist of at most 7 characters.
+The price of any product is less than 10000.
+The manufacturing year of any product is less than 2100.
+The name of any product consists of lowercase English letters (a-z) and digits(0-9) only.
+The original order of products is sorted increasing by price.
+
+
+input format
+The first line contains an integer, n, the number of products.
+
+The next line contains an integer, 3, the number of parameters of a product.
+
+Each line i of the n subsequent lines contains 3 space-separated strings, product[i].
+
+The next line contains an integer, q, the number of queries.
+
+The next line contains an integer, 2, the number of parameters of a query.
+
+Each line i of the q subsequent lines contains 2 space-separated strings, query[i].
+
+sample output
+Sample Input For Custom Testing
+
+STDIN                   FUNCTION
+-------                 ----------
+3                 →     product[] size n = 3   
+3                 →     product[][] size const = 3
+item2 510 1947    →     product = [["item2", "510", "1947"], ["item3", "2089", "2097"], ["item1", "4139", "1970"]] 
+item3 2089 2097
+item1 4139 1970 
+6                 →     query[] size q = 6
+2                 →     query[][] size const = 2
+Type3 2089        →     query = [["Type3", "2089"], ["Type2", "4139"], ["Type2", "510"], ["Type1", "1947"], ["Type1", "1970"], ["Type1", "2097"]] 
+Type2 4139 
+Type2 510 
+Type1 1947 
+Type1 1970 
+Type1 2097 
+Sample Output
+
+item1 
+item2 item3 
+
+item2 
+item1 
+item3 
+Explanation
+
+Only item1 has a price greater than 2089 i.e. 4139.
+Both item2, and item3 have a price of less than 4139 i.e. 510 and 2089 respectively.
+There are no items with price of less than 510.
+Only item2 was made in 1947.
+Only item1 was made in 1970.
+Only item3 was made in 2097.
+
+Sample Input For Custom Testing
+
+STDIN                   FUNCTION
+-------                 ----------
+3                 →     product[] size n = 3   
+3                 →     product[][] size const = 3
+item3 3086 1937   →     product = [["item3", "3086", "1937"], ["item1", "3434", "1907"], ["item2", "3435", "2082"]] 
+item1 3434 1907 
+item2 3435 2082 
+6                 →     query[] size q = 6
+2                 →     query[][] size const = 2
+Type1 1937        →     query = [["Type1", "1937"], ["Type3", "3434"], ["Type3", "3435"], ["Type2", "3435"], ["Type1", "2082"], ["Type1", "1907"]] 
+Type3 3434 
+Type3 3435 
+Type2 3435 
+Type1 2082 
+Type1 1907 
+Sample Output
+
+item3 
+item2 
+
+item3 item1 
+item2 
+item1 
+Explanation
+
+Only item3 was made in 1937
+Only item2 has a price of more than 3434 i.e. 3435.
+No item is priced more than 3435.
+Both item3 and item1 has a price of less than 3435.
+Only item2 was made in 2082.
+Only item1 was made in 1907.
+
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "io"
+    "os"
+    "strconv"
+    "strings"
+)
+
+
+
+/*
+ * Complete the 'getMatchingProducts' function below.
+ *
+ * The function is expected to return a 2D_STRING_ARRAY.
+ * The function accepts following parameters:
+ *  1. 2D_STRING_ARRAY products
+ *  2. 2D_STRING_ARRAY queries
+ */
+
+func getMatchingProducts(products [][]string, queries [][]string) [][]string {
+    // Write your code here
+
+}
+
+func main() {

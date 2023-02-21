@@ -1,0 +1,72 @@
+package main
+
+import (
+    "fmt"
+    "sort"
+    "strconv"
+)
+
+type Product struct {
+    name string
+    price, year int
+}
+
+func getProduct(products [][]string) []Product {
+    p := []Product{}
+    for i := 0; i < len(products); i++ {
+        price, _ := strconv.Atoi(products[i][1])
+        year, _ := strconv.Atoi(products[i][2])
+        p = append(p, Product{products[i][0], price, year})
+    }
+    return p
+}
+
+func getMatchingProducts(products [][]string, queries [][]string) [][]string {
+    p := getProduct(products)
+
+    var res [][]string
+    for i := 0; i < len(queries); i++ {
+        query := queries[i]
+
+        if query[0] == "Type1" {
+            year, _ := strconv.Atoi(query[1])
+            var productNames []string
+            for j := 0; j < len(p); j++ {
+                if p[j].year == year {
+                    productNames = append(productNames, p[j].name)
+                }
+            }
+            res = append(res, productNames)
+        }
+
+        if query[0] == "Type2" {
+            price, _ := strconv.Atoi(query[1])
+            var productNames []string
+            for j := 0; j < len(p); j++ {
+                if p[j].price < price {
+                    productNames = append(productNames, p[j].name)
+                }
+            }
+            res = append(res, productNames)
+        }
+
+        if query[0] == "Type3" {
+            price, _ := strconv.Atoi(query[1])
+            var productNames []string
+            for j := 0; j < len(p); j++ {
+                if p[j].price > price {
+                    productNames = append(productNames, p[j].name)
+                }
+            }
+            res = append(res, productNames)
+        }
+    }
+    return res
+}
+
+func main() {
+    products := [][]string{{"key", "50", "2013"}, {"fan", "100", "2012"}, {"lock", "150", "2013"}, {"table", "200", "2011"}, {"toy", "500", "2011"}}
+    queries := [][]string{{"Type1", "2013"}, {"Type2", "500"}, {"Type3", "500"}, {"Type1", "2011"}}
+    res := getMatchingProducts(products, queries)
+    fmt.Println(res)
+}

@@ -1,0 +1,108 @@
+3. Search Suggestion System
+For an array of n strings products and a word to search, search, design a system that, when each character of the searched word is typed, suggests at most three product names from the products array. The suggested products should share a common prefix with the searched word. If more than three products exist with a common prefix, report the three product names that appear first in lexicographical order.
+
+ 
+
+Return the suggested products, which will be a list of lists after each character of the searched word is typed.
+
+ 
+
+Note: A string x is considered lexicographically smaller than another string y if x will occur before y in the English dictionary.
+
+ 
+
+Example
+
+Suppose n = 5, products = [“carpet”, “cart”, “car”, “camera”, “crate”], and search = “camera”.
+
+Search Prefix	Matches	Lexicographically Smallest 3
+c	[“carpet”, “cart”, “car”, “camera”, “crate”]	[“camera”, "car", “carpet”]
+ca	[“carpet”, “cart”, “car”, “camera”]	[“camera”, "car", “carpet”]
+cam	["camera"]	["camera"]
+came	["camera"]	["camera"]
+camer	["camera"]	["camera"]
+camera	["camera"]	["camera"]
+ 
+
+Hence the answer is [[“camera”, "car", “carpet”], [“camera”, "car", “carpet”], ["camera"], ["camera"], ["camera"], ["camera"]].
+
+ 
+
+Function Description
+
+Complete the function getProductSuggestions in the editor below.
+
+getProductSuggestions has the following parameter(s):
+
+    string products[n]:  the list of products
+
+    string search: a string
+
+ 
+
+Returns
+
+    string[n][]:  for each prefix of the string, return a maximum of three lexicographically smallest words with a common prefix.
+
+ 
+Constraints
+
+1 ≤ n ≤ 1000
+
+1 ≤ length of products[i] ≤ 500
+
+1 ≤ sum(length of products[i]) ≤ 5 × 105
+
+All the strings of products are unique.
+
+products[i] consists of lowercase English letters only.
+
+1 ≤ length of search ≤1000
+
+The searched text consists of lowercase English letters only.
+
+The first line contains an integer, n, the number of elements in products.
+
+Each of the next n lines contains a string, products[i].
+
+The next line contains a string, search.
+
+Sample Input For Custom Testing
+
+STDIN        FUNCTION
+-----        --------
+4        →   products[] size n = 4
+abcd     →   products = ["abcd", "adbc", "abaa", "acbd"]
+abdc
+abaa
+acbd                            
+abad     →   search = "abad"
+Sample Output
+
+abaa abcd abdc
+abaa abcd abdc
+abaa
+Explanation
+
+Search Prefix	Matches	Result
+a	["abcd", "adbc", "abaa", "acbd"]	["abaa", "abcde", "abdc"]
+ab	["abcd", "adbc", "abaa"]	["abaa", "abcde", "abdc"]
+aba	["abaa"]	["abaa"]
+abad	[]	[]
+
+Sample Input For Custom Testing
+
+STDIN       FUNCTION
+-----       --------
+4       →   products[] size n = 4
+abcd    →   products = ["abcd", "adbc", "abaa", "acbd"]
+abdc
+abaa
+acbd                            
+pqrs    →   search = "pqrs"
+Sample Output
+
+ 
+Explanation
+
+There are no products that matches any of the typed texts.

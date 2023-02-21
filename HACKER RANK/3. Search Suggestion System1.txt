@@ -1,0 +1,47 @@
+package main
+
+import (
+    "fmt"
+    "sort"
+)
+
+func suggestedProducts(products []string, searchWord string) [][]string {
+    // Sort the products in lexicographically increasing order
+    sort.Strings(products)
+
+    result := make([][]string, len(searchWord))
+
+    prefix := ""
+
+    // Iterate through the characters in the search word
+    for i, ch := range searchWord {
+        prefix += string(ch)
+
+        suggestions := make([]string, 0)
+
+        // Iterate through the products to find matches
+        for _, product := range products {
+            if len(suggestions) >= 3 || len(product) < i+1 {
+                continue
+            }
+
+            if product[:i+1] == prefix {
+                suggestions = append(suggestions, product)
+            }
+        }
+
+        result[i] = suggestions
+    }
+
+    return result
+}
+
+func main() {
+    products := []string{"abcd", "adbc", "abaa", "acbd"}
+    search := "abad"
+    result := suggestedProducts(products, search)
+
+    for _, res := range result {
+        fmt.Println(res)
+    }
+}
