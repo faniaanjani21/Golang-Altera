@@ -1,0 +1,61 @@
+table product_types
+pk id int(11)
+    name barchar(255)
+    create_at timestamp
+    update_at timestamp
+
+table operators
+pk id int(11)
+    name barchar(255)
+    create_at timestamp
+    update_at timestamp
+
+table products_description
+pk id int(11)
+    description text
+    create_at timestamp
+    update_at timestamp
+
+table payment_methods
+pk id int(11)
+    name varchar(255)
+    status smallint
+    create_at timestamp
+    update_at timestamp
+
+table users
+pk id int(11)
+    status smallint
+    dob date
+    gender char(1)
+    create_at timestamp
+    update_at timestamp
+
+table transactions
+pk id int(11)
+fk user_id int(11)
+fk payment_methods int(11)
+status varchar(10)
+total_qty int(11)
+total_price numberic(25,2)
+create_at timestamp
+update_at timestamp
+
+transactions_details
+pk transactions_id int(11)
+pk product_id int(11)
+status varchar(10)
+qty int(11)
+price numberic(25,2)
+create_at timestamp
+update_at timestamp
+
+table products
+pk id int(11)
+fk product_types_id int(11)
+fk operators_id int(11)
+code varchar(255)
+name varchar(255)
+status smallint
+create_at timestamp
+update_at timestamp
