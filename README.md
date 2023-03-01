@@ -18,6 +18,8 @@ link and tools
 
 <img src="https://komarev.com/ghpvc/?username=rezapace&label=Profile%20views&color=0e75b6&style=flat" alt="rezapace" /> &emsp; [![kumal][kumal]][kumal]
 
-[kumal]: https://custom-icon-badges.demolab.com/badge/kumal-.com-blue.svg?logo=kumal
+[webkumal]: https://custom-icon-badges.demolab.com/badge/kumal-.com-blue.svg?logo=kumal
+
+<a href="https://webkumal.com/"><img src="[https://custom-icon-badges.demolab.com/badge/kumal-.com-blue.svg?logo=kumal][webkumal]" alt="Kumal logo" /></a>
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
