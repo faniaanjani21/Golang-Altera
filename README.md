@@ -5,6 +5,7 @@ berisikan tugas dan materi pada kampusmerdeka (100% - Mastering Golang Programmi
 link and tools
 
 - [x] [golang](https://golang.org/)
+- [x] [webkumal](https://webkumal.com/)
 - [x] [cryptii](https://cryptii.com/)
 - [x] [chatgpt](https://chat.openai.com/auth/login)
 - [x] [golang altera](https://alta.id/user-account/enrolled-courses/)
