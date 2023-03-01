@@ -14,12 +14,10 @@ link and tools
 - [x] [code 2 flow](https://app.code2flow.com/)
 - [x] [vidio monitoring](https://docs.google.com/spreadsheets/d/1o4TgqlB-hxDNoTH4ybP1yFPHIYANbcychl6N-tNd3tU/edit#gid=0)
 - [x] [github dektop](https://desktop.github.com/)
-- [x] [flowchart](https://app.diagrams.net/index.html)
+- [x] [flowchart ](https://app.diagrams.net/index.html)
 
 <img src="https://komarev.com/ghpvc/?username=rezapace&label=Profile%20views&color=0e75b6&style=flat" alt="rezapace" /> &emsp; [![kumal][kumal]][kumal]
 
-[webkumal]: https://custom-icon-badges.demolab.com/badge/kumal-.com-blue.svg?logo=kumal
-
-<a href="https://webkumal.com/"><img src="[https://custom-icon-badges.demolab.com/badge/kumal-.com-blue.svg?logo=kumal][webkumal]" alt="Kumal logo" /></a>
+[kumal]: https://custom-icon-badges.demolab.com/badge/kumal-.com-blue.svg?logo=kumal
 
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
