@@ -1,0 +1,20 @@
+Untuk menjalankan script otomatis di Linux dengan struktur folder yang telah dibuat, Anda dapat melakukan langkah-langkah berikut:
+
+Buka terminal pada Linux Anda
+Buat script baru dengan perintah nano script.sh atau nama file yang diinginkan
+Tambahkan perintah-perintah yang ingin dijalankan pada script tersebut, seperti contoh berikut:
+Simpan dan keluar dari editor nano dengan menekan Ctrl + X, lalu ketik y dan tekan Enter
+Berikan hak akses eksekusi pada script dengan perintah chmod +x script.sh
+Jalankan script dengan perintah ./script.sh
+Dengan langkah-langkah di atas, script otomatis akan berjalan dan menampilkan output yang diinginkan.
+
+Untuk menampilkan struktur folder yang telah dibuat pada Linux, Anda dapat menggunakan perintah tree. Namun, jika perintah tree belum terinstall di sistem Anda, Anda dapat menginstallnya dengan menggunakan package manager di Linux. Berikut adalah langkah-langkahnya:
+
+Buka terminal pada Linux Anda
+Pastikan bahwa package manager di sistem Anda sudah terupdate dengan perintah sudo apt update (untuk sistem berbasis Debian/Ubuntu) atau sudo yum update (untuk sistem berbasis Red Hat/Fedora)
+Install perintah tree dengan perintah sudo apt install tree (untuk sistem berbasis Debian/Ubuntu) atau sudo yum install tree (untuk sistem berbasis Red Hat/Fedora)
+Setelah selesai menginstall tree, masuk ke direktori utama folder yang ingin ditampilkan strukturnya dengan perintah cd /path/to/folder
+Jalankan perintah tree untuk menampilkan struktur folder dengan rinciannya
+Dengan langkah-langkah di atas, struktur folder yang telah dibuat akan ditampilkan secara rinci menggunakan perintah tree.
+
+cat untuk menampilkan isi file nya
