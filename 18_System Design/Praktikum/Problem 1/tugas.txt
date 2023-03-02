@@ -1,0 +1,4 @@
+### Problem 1
+
+- Gambarkan desain ERD dari sistem pembelian tiket kereta api!
+- Gambarkan use case diagram dari sistem pembelian tiket kereta api!

@@ -1,0 +1,9 @@
+### Problem 2 (Opsional)
+
+Terdapat sebuah query pada SQL yaitu `SELECT * FROM users;`
+
+Dengan tujuan yang sama, tuliskan dalam bentuk perintah:
+
+1. Redis
+2. Neo4j
+3. Cassandra
