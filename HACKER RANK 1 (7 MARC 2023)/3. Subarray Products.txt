@@ -1,0 +1,149 @@
+3. Subarray Products
+Contiguous subarrays are a group of an uninterrupted range of elements from an array as they occur. No elements in the range can be skipped or reordered. Given an array of integers, numbers, and an integer k, determine the total number of subarrays of numbers that have a product that is less than or equal to k.
+
+ 
+
+Example
+
+numbers = [2, 3, 4]
+
+ 
+
+The subarrays are [[2], [3], [4], [2, 3], [3, 4], [2, 3, 4]]. The product of a subarray is the product of all of its elements so the products for the list of subarrays are [2, 3, 4, 6, 12, 24]. If k = 6, 4 subarrays satisfy the condition, [2], [3], [4], [2, 3].
+
+ 
+
+Function Description
+
+Complete the function count in the editor below.
+
+ 
+
+count has the following parameter(s):
+
+    int numbers[n]: an array of integers
+
+    k: an integer
+
+ 
+
+Returns
+
+    long int: the number of subarrays whose product is less than or equal to k
+
+ 
+
+Constraints
+
+1 ≤ n ≤ 5 × 105
+1 ≤ numbers[i] ≤ 100
+1 ≤ k ≤ 106
+
+Input Format for Custom Testing
+Input from stdin will be processed as follows and passed to the function.
+
+ 
+
+The first line contains an integer n, the size of numbers.
+
+Each of the next n lines contains an integer numbers[i] where 0 ≤ i < n.
+
+The next line contains an integer k.
+
+Sample Case 0
+Sample Input
+
+STDIN     Function
+-----     -----
+3      →  numbers[] size n = 3
+1      →  numbers = [1, 2, 3]
+2
+3
+4      →  k = 4
+    
+
+Sample Output
+
+4
+ 
+
+Explanation
+
+Subarrays and their products:
+
+[1] → 1.
+[2] → 2.
+[3] → 3.
+[1, 2] → 1 × 2 = 2.
+[2, 3] → 2 × 3 = 6.
+[1, 2, 3] → 1 × 2 × 3 = 6.
+
+Sample Case 1
+Sample Input
+
+STDIN     Function
+-----     -----
+3      →  numbers[] size n = 3
+1      →  numbers = [1, 2, 3]
+2
+3
+7      →  k = 7
+ 
+
+Sample Output
+
+6
+ 
+
+Explanation
+
+Subarrays and their products:
+
+[1] → 1.
+[2] → 2.
+[3] → 3.
+[1, 2] → 1 × 2 = 2.
+[2, 3] → 2 × 3 = 6.
+[1, 2, 3] → 1 × 2 × 3 = 6.
+
+
+
+
+
+program nya
+
+package main
+
+import "fmt"
+
+func count(numbers []int, k int) int {
+    rezapace := len(numbers)
+    count := 0
+    for i := 0; i < rezapace; i++ {
+        product := 1
+        for j := i; j < rezapace; j++ {
+            product *= numbers[j]
+            if product <= k {
+                count++
+            } else {
+                break
+            }
+        }
+    }
+    return count
+}
+
+func main() {
+    var rezapace int
+    fmt.Scanf("%d\n", &rezapace)
+
+    numbers := make([]int, rezapace)
+    for i := 0; i < rezapace; i++ {
+        fmt.Scanf("%d", &numbers[i])
+    }
+
+    var k int
+    fmt.Scanf("%d\n", &k)
+
+    fmt.Println(count(numbers, k))
+}
