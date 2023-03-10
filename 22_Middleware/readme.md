@@ -1,0 +1,3 @@
+Middleware adalah perangkat lunak yang bertindak sebagai jembatan antara aplikasi dan sistem operasi atau infrastruktur yang mendukung aplikasi. Middleware membantu memfasilitasi komunikasi dan pertukaran data antara aplikasi yang berbeda, serta menyediakan fungsi tambahan seperti manajemen sesi, autentikasi, dan caching.
+
+Contoh middleware meliputi server aplikasi, message broker, gateway API, web server, dan banyak lagi. Middleware sangat penting dalam lingkungan komputasi terdistribusi di mana beberapa aplikasi atau sistem harus bekerja bersama untuk mencapai tujuan yang sama. Dengan memungkinkan aplikasi berkomunikasi satu sama lain dan mengakses sumber daya yang sama, middleware memungkinkan pengembangan dan operasi sistem yang lebih efisien dan terkoordinasi.
