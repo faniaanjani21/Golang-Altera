@@ -16,6 +16,8 @@ link and tools
 - [x] [vidio monitoring](https://docs.google.com/spreadsheets/d/1o4TgqlB-hxDNoTH4ybP1yFPHIYANbcychl6N-tNd3tU/edit#gid=0)
 - [x] [github dektop](https://desktop.github.com/)
 - [x] [flowchart ](https://app.diagrams.net/index.html)
+- [x] [docker](https://hub.docker.com/)
+- [x] [fly.io](https://fly.io/)
 
 <img src="https://komarev.com/ghpvc/?username=rezapace&label=Profile%20views&color=0e75b6&style=flat" alt="rezapace" /> &emsp; [![kumal][kumal]][kumal]
 
