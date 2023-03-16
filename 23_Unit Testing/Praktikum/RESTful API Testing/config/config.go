@@ -3,27 +3,23 @@ package config
 import (
 	"fmt"
 
+	"rest/models" // Tambahkan import ini
+
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 var DB *gorm.DB
 
-func init() {
-	InitDB()
-	InitialMigration()
-}
-
-type Config struct {
-	DB_Username string
-	DB_Password string
-	DB_Port     string
-	DB_Host     string
-	DB_Name     string
-}
-
 func InitDB() {
-	config := Config{
+	// Your database configuration
+	config := struct {
+		DB_Username string
+		DB_Password string
+		DB_Port     string
+		DB_Host     string
+		DB_Name     string
+	}{
 		DB_Username: "root",
 		DB_Password: "",
 		DB_Port:     "3306",
@@ -46,13 +42,6 @@ func InitDB() {
 	}
 }
 
-type User struct {
-	gorm.Model
-	Name     string `json:"name" form:"name"`
-	Email    string `json:"email" form:"email"`
-	Password string `json:"password" form:"password"`
-}
-
 func InitialMigration() {
-	DB.AutoMigrate(&User{})
+	DB.AutoMigrate(&models.User{}) // Ganti menjadi models.User{}
 }

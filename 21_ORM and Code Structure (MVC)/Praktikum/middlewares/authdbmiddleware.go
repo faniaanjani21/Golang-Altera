@@ -15,7 +15,7 @@ func main() {
 	// Middleware
 	e.Use(middleware.Logger())
 
-	// Rute
+	// Routes
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello, World!")
 	})
@@ -26,16 +26,16 @@ func main() {
 			return echo.NewHTTPError(http.StatusBadRequest, err.Error())
 		}
 		return c.JSON(http.StatusOK, map[string]interface{}{
-			"message": "berhasil mendapatkan pengguna berdasarkan id",
+			"message": "success get user by id",
 			"id":      id,
 		})
 	})
 
 	e.POST("/users", func(c echo.Context) error {
-		// Menangani pembuatan pengguna
-		return c.String(http.StatusOK, "Pengguna dibuat")
+		// Handle create user
+		return c.String(http.StatusOK, "User created")
 	})
 
-	// Mulai server
+	// Start server
 	log.Fatal(e.Start(":8080"))
 }

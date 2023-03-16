@@ -3,27 +3,24 @@ package config
 import (
 	"fmt"
 
+	"rest/models" // Tambahkan impor ini
+
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 var DB *gorm.DB
 
-func init() {
-	InitDB()
-	InitialMigration()
-}
-
-type Config struct {
-	DB_Username string
-	DB_Password string
-	DB_Port     string
-	DB_Host     string
-	DB_Name     string
-}
-
+// InitDB digunakan untuk menginisialisasi koneksi ke database
 func InitDB() {
-	config := Config{
+	// Konfigurasi database Anda
+	config := struct {
+		DB_Username string
+		DB_Password string
+		DB_Port     string
+		DB_Host     string
+		DB_Name     string
+	}{
 		DB_Username: "root",
 		DB_Password: "",
 		DB_Port:     "3306",
@@ -31,6 +28,7 @@ func InitDB() {
 		DB_Name:     "crud_go",
 	}
 
+	// Membuat string koneksi menggunakan konfigurasi yang telah didefinisikan
 	connectionString := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=True&loc=Local",
 		config.DB_Username,
 		config.DB_Password,
@@ -40,19 +38,16 @@ func InitDB() {
 	)
 
 	var err error
+	// Membuka koneksi ke database menggunakan string koneksi
 	DB, err = gorm.Open("mysql", connectionString)
+	// Jika ada kesalahan saat membuka koneksi, hentikan eksekusi program
 	if err != nil {
 		panic(err)
 	}
 }
 
-type User struct {
-	gorm.Model
-	Name     string `json:"name" form:"name"`
-	Email    string `json:"email" form:"email"`
-	Password string `json:"password" form:"password"`
-}
-
+// InitialMigration digunakan untuk menjalankan migrasi awal pada database
 func InitialMigration() {
-	DB.AutoMigrate(&User{})
+	// Migrasi model User
+	DB.AutoMigrate(&models.User{}) // Ganti menjadi models.User{}
 }
