@@ -1,55 +1,30 @@
-orm dan code strukture
+# ORM dan Struktur Kode
 
-crud menggunakan eho dan gorm dengan codingan crud menggunakan golang
+## ORM (Object-Relational Mapping)
 
-kepanjangan orm object relational mapping
+ORM adalah suatu teknologi yang memungkinkan kita untuk mengakses database relasional dengan menggunakan objek-objek yang terdefinisi dalam suatu bahasa pemrograman. Dengan menggunakan ORM, kita dapat memanipulasi data pada database dengan lebih mudah karena kita tidak perlu menulis query SQL secara langsung.
 
-cara install gorm
-https://gorm.io/docs/
+## GORM
 
-https://gorm.io/docs/migration.html
+GORM adalah salah satu ORM untuk Golang yang cukup populer dan banyak digunakan. GORM menyediakan fitur-fitur yang lengkap, seperti dukungan untuk berbagai macam database, relasi antar tabel, validasi data, dan lain-lain.
 
-powersheel install
-go get -u gorm.io/gorm
-go get -u gorm.io/driver/sqlite
+Untuk menginstall GORM, kita dapat mengikuti langkah-langkah berikut:
 
-cara menjalanakan nya cukup go run main.go
+1. Buka terminal atau PowerShell.
+2. Jalankan perintah `go get -u gorm.io/gorm`.
+3. Jalankan perintah `go get -u gorm.io/driver/sqlite` jika kamu ingin menggunakan database SQLite.
 
-sebener nya bisa di build dengan 1 file saja yang benernamakan main.go namun di tutorial
-mengajarkan cara yang mudah di baca dan membagi nya menjadi beberapa folder
-seperti
-config
-controller
-lib
-models
-routes
+## Struktur Kode
 
-dan masing masing mempunyai materi yang berbeda dan juga package yang berbeda
+Untuk membuat kode kita lebih terstruktur, kita dapat membagi kode menjadi beberapa direktori dan file. Berikutadalah struktur kode yang dapat digunakan untuk membuat CRUD dengan GORM:
 
-pada materi ini akan menjalankan res api di mana kita bisa mengakses nya dengan postman
+- `config`: berisi konfigurasi untuk koneksi ke database.
+- `controller`: berisi fungsi-fungsi yang akan dipanggil saat ada request dari client.
+- `lib`: berisi helper function atau library yang dapat digunakan di seluruh aplikasi.
+- `models`: berisi definisi model atau struktur tabel pada database.
+- `routes`: berisi definisi route atau endpoint yang dapat diakses oleh client.
+- `main.go`: file utama yang akan memanggil fungsi-fungsi dari package lain dan menjalankan server.
 
-tutorial
-buka file nya praktikum
-buka file main.go
-jalankan xampp
-isi data nya
+Dengan membagi kode menjadi beberapa package seperti ini, kita dapat memudahkan proses development dan memperbaiki kode jika terjadi kesalahan pada bagian tertentu.
 
-func InitDB() {
-config := Config{
-DB_Username: "root",
-DB_Password: "",
-DB_Port: "3306",
-DB_Host: "localhost",
-DB_Name: "crud_go",
-}
-
-setelah itu jalankan dengan main.go
-setelah itu buka postman
-buka url nya http://localhost:8080/users
-
-lakukan dengan metode get, post, put, delete
-
-dimana get berfungsi untuk menampilkan data
-post berfungsi untuk menambah data
-put berfungsi untuk mengubah data
-delete berfungsi untuk menghapus data
+Untuk menjalankan aplikasi, kita dapat mengetikkan perintah `go run main.go` di terminal atau PowerShell. Setelah itu, kita dapat mengakses aplikasi melalui browser atau aplikasi sejenis Postman dengan memasukkan URL endpoint yang telah kita definisikan di dalam `routes`.

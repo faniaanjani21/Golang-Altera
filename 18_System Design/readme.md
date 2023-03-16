@@ -1,47 +1,71 @@
-Diagram Design
-Characteristics of Distributed Systems
-Horizontal Scaling vs Vertical Scaling
-Job/Work Queue
-Load Balancing
-Monolithic vs Microservices
-SQL vs NOSQL
-Caching
-Database Indexing
-Database Replication
+# Diagram Design
 
-diagram tools
-smart draw
-lucid chart
-draw io
-visio
-whimsical
+## Karakteristik Sistem Terdistribusi
 
-software design
-flowchart
-usecase
-erd
-Hls
+Sistem Terdistribusi memiliki karakteristik yaitu:
 
-Pengertian Scalability
-Scalability adalah kapasitas sebuah sistem untuk mempertahankan atau meningkatkan efisiensi dan efektifitasnya meskipun terjadi perubahan kebutuhan atau beban operasional. Sistem yang scalable dapat meningkatkan jumlah server, kinerja penyimpanan, dan daya operasional tanpa merusak fungsi utama aplikasi atau layanan yang sedang berjalan.
+- Terdiri dari beberapa komputer yang bekerja sama untuk menyelesaikan tugas
+- Terdapat komunikasi dan koordinasi antar komponen
+- Terdapat kemampuan untuk melakukan scaling secara horizontal atau vertikal
 
-scalling
-Understanding Scaling can be a difficult concept, but the basics are pretty straightforward. Scaling refers to how much data can be processed by a system at any given time. It is not just about the number of users that can use the system, but also the amount of data being generated and stored.
+## Horizontal Scaling vs Vertical Scaling
 
-To explain in more detail, consider this example: Imagine you have a website with 100 visitors per second. As the visitors increase, so does the amount of data being generated. If you do not scale your system appropriately, the website may start to suffer from performance issues or crashes. On the other hand, if you do scale correctly, it can handle up to 10,000 visitors per second without any problem.
+- Horizontal Scaling: Menambah jumlah instance pada suatu aplikasi dengan tujuan membagi beban kerja
+- Vertical Scaling: Menambah kapasitas pada suatu instance, misalnya dengan menambah RAM atau CPU
 
-Another important part of scaling is scalability. Scalability refers to how quickly the system can respond to changes in the data or the user load. This is especially important if you're dealing with large amounts of data. A system that can process 100 data points per millisecond will have different scalability requirements than one that processes 1000 data points per millisecond.
+## Job/Work Queue
 
-Lastly, scalability also involves choosing the right hardware/software architecture for the system. For example, if you are dealing with large amounts of data and need maximum performance, your system architecture will likely be different than if you had a smaller dataset.
+Job Queue atau Work Queue adalah mekanisme untuk menyelesaikan tugas secara terstruktur. Tugas-tugas tersebut ditempatkan pada antrian, dan instance yang tersedia dapat mengambil tugas dari antrian tersebut untuk dieksekusi.
 
-Hopefully this helps to give you an idea of what scaling means and how to think about scalability. Good luck!
+## Load Balancing
 
-Kelayakan, ketersediaan (availabilty) dan efisiensi adalah tiga kata yang sering dibahas sehubungan dengan lingkungan TI dan layanan digital. Berikut adalah deskripsi singkat untuk masing-masing:
+Load Balancing adalah mekanisme untuk membagi beban kerja pada beberapa instance agar tidak terjadi overload pada suatu instance. Load Balancer akan memantau beban kerja pada setiap instance dan memutuskan instance mana yang akan menerima permintaan selanjutnya.
 
-Kelayakan (Reliability): Seberapa tinggi daya tahan sistem terhadap gangguan / masalah teknis?
+## Monolitik vs Mikroservice
 
-Ketersediaan (Availability): Seberapa cepat sistem dapat merespons permintaan atau proses aktivitas?
+- Monolitik: Aplikasi yang dibangun sebagai satu kesatuan yang besar, biasanya sulit untuk melakukan scaling secara horizontal
+- Mikroservice: Aplikasi yang dibangun sebagai kumpulan service yang terpisah, memungkinkan scaling secara horizontal
 
-Efisiensi (Efficiency): Seberapa baik sistem membangun solusi, data dan tampilan dengan menggunakan sumber daya yang dimiliki?
+## SQL vs NoSQL
 
-Perbedaan antara ketiganya adalah bahwa keandalan melihat bagaimana kestabilan, stabilitas dan daya tahan sebuah sistem saat beroperasi; kesediaan (availability) melihat sejauh mana sistem dapat merespons serta menyediakan layanan yang diinginkan secara responsif; sedangkan efisiensi memberikan gambaran tentang sejauh mana sumber daya sistem-lah yang digunakan dalam mendapatkan solusi dan output yang diinginkan.
+- SQL: Database yang memanfaatkan Structured Query Language sebagai bahasa query, cocok untuk data terstruktur
+- NoSQL: Database yang tidak memanfaatkan Structured Query Language, cocok untuk data yang tidak terstruktur
+
+## Caching
+
+Caching adalah mekanisme untuk menyimpan data sementara pada suatu instance, sehingga permintaan selanjutnya tidak perlu memuat data dari sumber asli. Hal ini dapat meningkatkan performa dan mengurangi beban kerja pada sumber asli.
+
+## Database Indexing
+
+Indexing adalah mekanisme untuk mempercepat pencarian data pada suatu database dengan membuat indeks pada kolom-kolom yang sering digunakan.
+
+## Database Replication
+
+Database Replication adalah mekanisme untuk membuat salinan data dari suatu database pada instance lain, sehingga terdapat cadangan data jika terjadi kegagalan pada suatu instance.
+
+## Tools Diagram
+
+Beberapa tools yang dapat digunakan untuk membuat diagram:
+
+- SmartDraw
+- Lucidchart
+- Draw.io
+- Visio
+- Whimsical
+
+## Software Design
+
+Beberapa jenis design yang umum digunakan adalah:
+
+- Flowchart
+- Use Case
+- Entity Relationship Diagram (ERD)
+- High-Level System Design (HLS)
+
+## Pengertian dan Konsep Scalability
+
+Scalability adalah kemampuan suatu sistem untuk meningkatkan kinerjanya dengan menambah sumber daya, baik secara horizontal atau vertikal. Scalability juga berhubungan dengan kemampuan sistem untuk merespon perubahan beban kerja atau data dengan cepat dan efektif. Pemilihan arsitektur hardware/software yang tepat juga sangat penting dalam scalability.
+
+## Kelayakan, Ketersediaan, dan Efisiensi
+
+Kelayakan (Reliability), Ketersediaan (Availability), dan Efisiensi (Efficiency) adalah tiga hal yang sering dibahas dalam lingkungan TI dan layanan digital. Kelayakan mengacu pada daya tahan sistem terhadap gangguan atau masalah teknis, ketersediaan mengacu pada responsivitas sistem dalam menyediakan layanan, dan efisiensi mengacu pada penggunaan sumber daya yang ada untuk menghasilkan solusi dan output yang diinginkan.

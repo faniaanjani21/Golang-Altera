@@ -1,96 +1,71 @@
-materi databse scema dan data definition laguage
+# Materi Database Schema dan Data Definition Language
 
-indtroduction database
-relationship data bse
-entitiy relationship diagram
-sql statment
+## Pengertian Database
 
-pengertian
-databaseadalah sekumpulan data yang terorganisir
+Database adalah sekumpulan data yang terorganisir dalam suatu sistem yang dapat diakses dan dikelola dengan mudah.
 
-one to one adalah sebuah hubungan anatara database
-yang mengacu pada dua table dalam data base relational
-hubungan antara dua tabel dalam basis data relasional di mana satu rekaman dalam tabel pertama hanya berkorespondensi dengan satu rekaman dalam tabel kedua, dan sebaliknya. Artinya, setiap rekaman dalam satu tabel dikaitkan dengan satu rekaman tunggal di tabel lainnya, dan tidak ada hubungan duplikat. Hubungan satu-satu sering digunakan untuk memecah tabel yang lebih besar menjadi tabel yang lebih kecil dan lebih mudah dikelola, dan dapat diterapkan dengan menggunakan keterikatan kunci primer-kunci asing.
+## Relationship Database
 
-contoh nya
-Contoh hubungan satu-satu dalam basis data bisa diilustrasikan dengan menggunakan tabel "customer" dan "customer_address". Setiap pelanggan (customer) hanya memiliki satu alamat (customer_address) dan setiap alamat hanya dimiliki oleh satu pelanggan.
+Relationship Database adalah hubungan antara tabel-tabel dalam suatu database relasional. Terdapat tiga jenis hubungan dalam database relasional, yaitu:
 
-Tabel "customer" berisi informasi tentang pelanggan seperti id, nama, email, dll. Tabel "customer_address" berisi informasi tentang alamat pelanggan seperti id, alamat, kota, kode pos, dll.
+### 1. One-to-One
 
-Untuk menetapkan hubungan satu-satu antara kedua tabel tersebut, dapat digunakan kunci asing (foreign key) pada tabel "customer_address" yang merujuk ke kunci primer (primary key) pada tabel "customer". Dengan demikian, setiap rekaman di tabel "customer_address" hanya berkorespondensi dengan satu rekaman di tabel "customer" dan tidak ada rekaman yang terduplikasi.
+Hubungan antara dua tabel dalam basis data relasional di mana satu rekaman dalam tabel pertama hanya berkorespondensi dengan satu rekaman dalam tabel kedua, dan sebaliknya.
 
-one to many
+Contoh: Tabel "customer" dan "customer_address".
 
-- pengertian
-  Hubungan satu-ke-banyak (one-to-many) dalam basis data mengacu pada hubungan antara dua tabel dalam basis data relasional di mana satu rekaman dalam tabel pertama dapat berkorespondensi dengan banyak rekaman dalam tabel kedua. Namun, setiap rekaman di tabel kedua hanya dapat berkorespondensi dengan satu rekaman di tabel pertama.
+### 2. One-to-Many
 
-Contoh umum dari hubungan satu-ke-banyak adalah hubungan antara tabel "orders" dan "order_details" dalam sebuah sistem manajemen toko online. Setiap pesanan (order) dapat memiliki banyak detail pesanan (order_details), seperti nama produk, harga, jumlah, dll. Namun, setiap detail pesanan hanya terkait dengan satu pesanan.
+Hubungan antara dua tabel dalam basis data relasional di mana satu rekaman dalam tabel pertama dapat berkorespondensi dengan banyak rekaman dalam tabel kedua. Namun, setiap rekaman di tabel kedua hanya dapat berkorespondensi dengan satu rekaman di tabel pertama.
 
-Tabel "orders" akan berisi informasi tentang pesanan seperti nomor
+Contoh: Hubungan antara tabel "orders" dan "order_details".
 
-contoh
-Dalam contoh ini, tabel "orders" memiliki kolom "Order ID" sebagai kunci primer (primary key) dan tabel "order_details" memiliki kolom "Order Detail ID" sebagai kunci primer dan "Order ID" sebagai kunci asing (foreign key) yang merujuk ke kolom "Order ID" di tabel "orders".
+### 3. Many-to-Many
 
-Karena hubungan satu-ke-banyak, satu pesanan dalam tabel "orders" dapat berkorespondensi dengan banyak detail pesanan dalam tabel "order_details", tetapi setiap detail pesanan hanya dapat berkorespondensi dengan satu pesanan dalam tabel "orders". Misalnya, pesanan dengan Order ID 1001 memiliki 2 detail pesanan dalam tabel "order_details" dengan Order Detail ID 1 dan 2. Sedangkan detail pesanan dengan Order Detail ID 1 dan 2 hanya berkorespondensi dengan pesanan yang memiliki Order ID 1001 di tabel "orders
+Hubungan antara dua tabel dalam basis data relasional di mana banyak rekaman dalam tabel pertama dapat berkorespondensi dengan banyak rekaman dalam tabel kedua, dan sebaliknya.
 
-many to many
-Many-to-many merupakan jenis hubungan antara dua tabel dalam basis data relasional di mana banyak rekaman dalam tabel pertama dapat berkorespondensi dengan banyak rekaman dalam tabel kedua, dan sebaliknya. Artinya, sebuah rekaman dalam tabel pertama dapat memiliki banyak rekaman di tabel kedua yang terkait, dan sebuah rekaman di tabel kedua dapat berkorespondensi dengan banyak rekaman di tabel pertama.
+Contoh: Hubungan antara tabel "students" dan "courses".
 
-contoh nya
-tabel "students" dan "courses" dalam sistem manajemen sekolah. Seorang siswa (student) dapat mendaftar pada banyak kursus (courses), dan sebuah kursus dapat diikuti oleh banyak siswa.
+## Entity Relationship Diagram
 
-Untuk mengimplementasikan hubungan many-to-many, dibutuhkan sebuah tabel pivot atau tabel relasi yang menyimpan kunci asing (foreign key) dari kedua tabel. Tabel pivot ini berfungsi untuk menghubungkan rekaman dari kedua tabel.
+Entity Relationship Diagram (ERD) adalah sebuah diagram yang digunakan untuk merepresentasikan hubungan antara entitas dalam suatu database.
 
-Contoh tabel pivot untuk hubungan many-to-many antara tabel "students" dan "courses":
+## SQL Statement
 
-Tabel "student_courses":
-Dalam contoh ini, tabel "students" memiliki kolom "Student ID" sebagai kunci primer dan tabel "courses" memiliki kolom "Course ID" sebagai kunci primer. Tabel pivot "student_courses" memiliki kolom "Student ID" dan "Course ID" sebagai kunci asing yang merujuk ke kolom "Student ID" dan "Course ID" di tabel "students" dan "courses".
+SQL (Structured Query Language) adalah bahasa yang digunakan untuk mengakses dan mengelola database. Terdapat beberapa jenis perintah SQL, yaitu:
 
-Dalam tabel "student_courses", setiap baris mewakili hubungan antara satu siswa dan satu kursus yang diikuti oleh siswa tersebut. Seorang siswa dengan Student ID 001 misalnya, mengikuti dua kursus dengan Course ID 101 dan 102. Sebaliknya, kursus dengan Course ID 101 diikuti oleh dua siswa dengan Student ID 001 dan 002.
+### 1. Data Definition Language (DDL)
 
-cara implementasi
-rdbms
-ddl = data definition language
-dml = data manipulation language
-dcl = data control language
+DDL digunakan untuk membuat, mengubah, dan menghapus struktur tabel dalam database. Contoh perintah DDL: CREATE, ALTER, dan DROP.
 
-statement operation
-insert
-selec
-update
-delete
+### 2. Data Manipulation Language (DML)
 
-contoh insert
-INSERT INTO table_name (column1, column2, column3, ...)
+DML digunakan untuk memanipulasi data dalam tabel, seperti menambah, mengubah, dan menghapus data. Contoh perintah DML: INSERT, SELECT, UPDATE, dan DELETE.
 
-contoh select
-SELECT column1, column2, column3, ...
+### 3. Data Control Language (DCL)
 
-contoh update
-UPDATE table_name
+DCL digunakan untuk mengatur hak akses pengguna dalam database. Contoh perintah DCL: GRANT dan REVOKE.
 
-contoh delete
-DELETE FROM table_name
+## Join (Standard SQL ANSI)
 
-join standar sql ansi
-inner join
-left join
-right join
+Join adalah perintah SQL yang digunakan untuk menggabungkan dua tabel atau lebih berdasarkan kolom yang dimiliki. Terdapat tiga jenis join dalam SQL, yaitu:
 
-contoh inner join
-SELECT column_name(s)
+### 1. Inner Join
 
-contoh left join
-SELECT column_name(s)
+Inner Join digunakan untuk mengambil data yang terdapat pada kedua tabel yang di-join-kan.
 
-contoh right join
-SELECT column_name(s)
+### 2. Left Join
 
-pengertian onion model
-onion model adalah sebuah model yang digunakan untuk memisahkan antara data dan aplikasi. Model ini terdiri dari 3 lapisan, yaitu lapisan data, lapisan aplikasi, dan lapisan presentasi. Lapisan data berisi data-data yang akan digunakan oleh aplikasi. Lapisan aplikasi berisi program-program yang akan mengolah data-data yang ada di lapisan data. Lapisan presentasi berisi tampilan tampilan yang akan ditampilkan kepada pengguna.
+Left Join digunakan untuk mengambil semua data dari tabel kiri dan data yang cocok dari tabel kanan.
 
-contoh union
-SELECT column_name(s) FROM table1
+### 3. Right Join
 
-dungsi agregasi
-adalah di mana nilai beberapa baris di kelompokan bersama untuk nilai ringkaasan tunggal
+Right Join digunakan untuk mengambil semua data dari tabel kanan dan data yang cocok dari tabel kiri.
+
+## Pengertian Onion Model
+
+Onion Model adalah sebuah model yang digunakan untuk memisahkan antara data dan aplikasi. Model ini terdiri dari 3 lapisan, yaitu lapisan data, lapisan aplikasi, dan lapisan presentasi. Lapisan data berisi data-data yang akan digunakan oleh aplikasi. Lapisan aplikasi berisi program-program yang akan mengolah data-data yang ada di lapisan data. Lapisan presentasi berisi tampilan-tampilan yang akan ditampilkan kepada pengguna.
+
+## Aggregate Function
+
+Aggregate Function adalah fungsi yang digunakan untuk menghitung nilai-nilai yang berkaitan dengan kumpulan data, seperti nilai rata-rata, nilai maksimum, dan nilai minimum.
