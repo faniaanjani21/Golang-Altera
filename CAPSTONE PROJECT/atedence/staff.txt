@@ -1,0 +1,28 @@
+Berikut adalah contoh struktur tabel yang dapat digunakan untuk merekam data kehadiran staf:
+
+Tabel: staff
+
+id_staff (int, primary key, auto increment)
+nama_staff (varchar)
+jabatan (varchar)
+email (varchar)
+password (varchar)
+Tabel: attendance_record
+
+id_attendance (int, primary key, auto increment)
+id_staff (int, foreign key ke tabel staff)
+tgl_masuk (date)
+waktu_masuk (time)
+status (varchar)
+Kolom "status" pada tabel "attendance_record" akan merekam apakah kehadiran staf tepat waktu atau terlambat. Anda dapat menggunakan logika bisnis yang sesuai untuk menentukan apakah staf harus mendapatkan bonus XP atau tidak.
+
+Selain itu, Anda dapat membuat tabel lain seperti "attendance_notification" untuk merekam notifikasi yang diberikan jika kehadiran staf terlambat. Tabel tersebut dapat memiliki struktur sebagai berikut:
+
+Tabel: attendance_notification
+
+id_notification (int, primary key, auto increment)
+id_staff (int, foreign key ke tabel staff)
+tgl_notifikasi (date)
+waktu_notifikasi (time)
+pesan (varchar)
+Tabel "attendance_notification" akan merekam notifikasi yang diberikan kepada staf yang terlambat. Anda dapat menambahkan informasi tambahan seperti pesan atau alasan keterlambatan pada kolom "pesan".
