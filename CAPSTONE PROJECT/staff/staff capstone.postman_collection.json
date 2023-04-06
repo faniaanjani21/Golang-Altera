@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "dadc2712-e817-45d7-af16-c0fed6699b69",
+		"name": "staff capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26142588"
+	},
+	"item": [
+		{
+			"name": "data staff",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doeaa\",\r\n    \"email\": \"john.doe@exaamplae.com\",\r\n    \"password\": \"passworad12a3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/staff",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"staff"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "untuk regist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"reza1\",\r\n    \"email\": \"reza1@examplae.com\",\r\n    \"password\": \"password12a3\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"email\": \"jane.smith@example.com\"\r\n\t\"password\": \"abc123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Staff-ID",
+						"value": "1",
+						"type": "text"
+					},
+					{
+						"key": "X-Experience",
+						"value": "5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9000/attendance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"staff_id\": 1,\r\n\t\"Date\": \"2023-04-06\",\r\n\t\"Time\": \"08:00:00\",\r\n\t\"XP\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/attendance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"attendance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
