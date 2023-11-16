@@ -1,4 +1,4 @@
-# go-muhammad-reza-hidayat
+# Golang Altera
 
 berisikan tugas dan materi pada kampusmerdeka (100% - Mastering Golang Programming)
 
