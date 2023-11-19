@@ -19,6 +19,9 @@ link and tools
 - [x] [docker](https://hub.docker.com/)
 - [x] [fly.io](https://fly.io/)
 
+- [x] [Vidio Gmeet](https://drive.google.com/drive/folders/18TMf_JZfDwK4KlSr7mCAtrLNpDmts9cL?usp=sharing)
+- [x] [Materi](https://drive.google.com/drive/folders/1Mr-3bf2HR2hFOVdmT6kPcHYzn3T76ZTW?usp=sharing)
+
 <img src="https://komarev.com/ghpvc/?username=rezapace&label=Profile%20views&color=0e75b6&style=flat" alt="rezapace" /> &emsp; [![kumal][kumal]][kumal]
 
 [kumal]: https://custom-icon-badges.demolab.com/badge/kumal-.com-blue.svg?logo=kumal
